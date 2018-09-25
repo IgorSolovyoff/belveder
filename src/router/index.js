@@ -28,6 +28,11 @@ export default new Router({
     	path:'/test3',
     	name: 'test3',
     	component: test3
+    },
+    {
+      path:'/home',
+      name:'home',
+      component:() => import("@/views/home.vue")
     }
   ]
 })

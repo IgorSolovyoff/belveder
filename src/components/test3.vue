@@ -1,39 +1,25 @@
 <template>
-	<div class='nav'>
-		<ul>
-			<li>
-				<a href="#/">home</a>
-			</li>
-			<li>
-				<a href="#/test">test</a>
-			</li>
-			<li>
-				<a href="#/test2">test2</a>
-			</li>
-			<li>
-				<a href="#/test3">test3</a>
-			</li>
-		</ul>
-		<p>ТРЕТЬЯ СТРАНИЦА</p>
-	</div>
+	<p>
+		Изучая опыт ведущих мировых производителей, мы никогда слепо не копируем даже лучшие их образцы продукции. Каждый новый материал создается вдумчиво, с пониманием того, каких именно эффектов и внешнего вида именно мы хотим добиться в новом декоративном покрытии. Большинство сотрудников компании работает в ней со времени основания. Огромный опыт позволяет избегать ошибок и досконально знать все нюансы своей профессии каждому специалисту от аппаратчика производственного цеха до технологов и руководителей высшего звена.
+	</p>
 </template>
 <style scoped>
 h1, h2 {
-  font-weight: normal;
+font-weight: normal;
 }
 ul {
-  list-style-type: none;
-  padding: 0;
+list-style-type: none;
+padding: 0;
 }
 li {
-  display: inline-block;
-  margin: 0 10px;
+display: inline-block;
+margin: 0 10px;
 }
 a {
-  color: #42b983;
+color: #42b983;
 }
 p {
-	color: #42b983;
-	font-size: 25px;
+color: #42b983;
+font-size: 25px;
 }
 </style>
