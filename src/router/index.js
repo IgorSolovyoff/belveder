@@ -1,38 +1,29 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import test from '@/components/test'
-import test2 from '@/components/test2'
-import test3 from '@/components/test3'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/about',
+      name: 'about',
+      component: () => import('@/views/about.vue')
     },
     {
-    	path:'/test',
-    	name: 'test',
-    	component: test
+      path: '/contacts',
+      name: 'contacts',
+      component: () => import('@/views/contacts.vue')
     },
     {
-    	path:'/test2',
-    	name: 'test2',
-    	component: test2
-    }, 
-    {
-    	path:'/test3',
-    	name: 'test3',
-    	component: test3
+      path: '/product',
+      name: 'product',
+      component: () => import('@/views/product.vue')
     },
     {
-      path:'/home',
-      name:'home',
-      component:() => import("@/views/home.vue")
+      path: '/home',
+      name: 'home',
+      component: () => import('@/views/home.vue')
     }
   ]
 })

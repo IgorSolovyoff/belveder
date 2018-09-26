@@ -1,27 +1,24 @@
 /* eslint-disable */
 <template>
   <div id="app">
-    <mainHeader/>       
+    <mainHeader/>
     <router-view/>
     <mainFooter/>
   </div>
 </template>
 
 <script>
-import mainHeader from "@/components/header.vue"
-import mainFooter from "@/components/footer.vue"
+import mainHeader from '@/components/header.vue'
+import mainFooter from '@/components/footer.vue'
 export default {
   name: 'App',
   components: {
     mainHeader,
-    mainFooter,
+    mainFooter
   }
-};
+}
 </script>
 <style>
-#nav {
-    
-}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,10 +26,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-p {
-color: #42b983;
-font-size: 25px;
 }
 </style>

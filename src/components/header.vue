@@ -1,29 +1,28 @@
-/* eslint-disable */
 <template>
   <header class="header">
     <div id="nav">
       <ul>
         <li>
-          <a href="#/">home</a>
+          <a href="#/home">Главная</a>
         </li>
         <li>
-          <a href="#/test">test</a>
+          <a href="#/about">О нас</a>
         </li>
-          <img src="@/assets/Logo-Belveder.png"> 
+          <img src="@/assets/Logo-Belveder.png">
         <li>
-          <a href="#/test2">test2</a>
+          <a href="#/product">Продукция</a>
         </li>
         <li>
-          <a href="#/test3">test3</a>
+          <a href="#/contacts">Контакты</a>
         </li>
-      </ul> 
+      </ul>
     </div>
   </header>
 </template>
 <script>
 export default {
-  name: "mainHeader"
-};
+  name: 'mainHeader'
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -41,5 +40,8 @@ margin: 0 10px;
 }
 a {
 color: #42b983;
+}
+img {
+max-width: 100%;
 }
 </style>
