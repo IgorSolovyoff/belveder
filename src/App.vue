@@ -1,33 +1,18 @@
 <template>
   <div id="app">
-    <header class="header">
-      <div id="nav">
-      <ul>
-        <li>
-          <a href="#/">home</a>
-        </li>
-        <li>
-          <a href="#/test">test</a>
-        </li>
-        <img src="./assets/Logo-Belveder.png"> 
-        <li>
-          <a href="#/test2">test2</a>
-        </li>
-        <li>
-          <a href="#/test3">test3</a>
-        </li>
-      </ul> 
-      </div>     
-    </header>
-    
+    <mainHeader/>       
     <router-view/>
   </div>
 </template>
 
 <script>
+import mainHeader from "@/components/header.vue";
 export default {
-  name: 'App'
-}
+  name: 'App',
+  components: {
+    mainHeader
+  }
+};
 </script>
 
 <style>
