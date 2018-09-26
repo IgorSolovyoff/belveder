@@ -1,20 +1,23 @@
+/* eslint-disable */
 <template>
   <div id="app">
     <mainHeader/>       
     <router-view/>
+    <mainFooter/>
   </div>
 </template>
 
 <script>
-import mainHeader from "@/components/header.vue";
+import mainHeader from "@/components/header.vue"
+import mainFooter from "@/components/footer.vue"
 export default {
   name: 'App',
   components: {
-    mainHeader
+    mainHeader,
+    mainFooter,
   }
 };
 </script>
-
 <style>
 #nav {
     
@@ -27,21 +30,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-ul {
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-overflow: hidden;
-text-align: center;
-}
-li {
-display: inline;
-margin: 0 10px;
 
-}
-a {
-color: #42b983;
-}
 p {
 color: #42b983;
 font-size: 25px;

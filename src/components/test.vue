@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
 	<div class='nav'>
 		<p>Новый сайт БЕЛЬВЕДЕР</p>

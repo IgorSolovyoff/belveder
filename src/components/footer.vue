@@ -1,6 +1,6 @@
 /* eslint-disable */
 <template>
-  <header class="header">
+  <footer class="footer">
     <div id="nav">
       <ul>
         <li>
@@ -18,11 +18,11 @@
         </li>
       </ul> 
     </div>
-  </header>
+  </footer>
 </template>
 <script>
 export default {
-  name: "mainHeader"
+  name: "mainFooter"
 };
 </script>
 
@@ -38,6 +38,7 @@ text-align: center;
 li {
 display: inline;
 margin: 0 10px;
+
 }
 a {
 color: #42b983;
