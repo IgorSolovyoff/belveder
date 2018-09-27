@@ -2,8 +2,11 @@
 <template>
   <div id="app">
     <mainHeader/>
+    <main id="page-wrap">
+    <h1 id="ham">Бельведер</h1>
     <router-view/>
     <mainFooter/>
+    </main>
   </div>
 </template>
 
@@ -18,7 +21,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,5 +29,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+@media(min-width: 600px){
+  #ham{
+    visibility: hidden;
+  }
 }
 </style>

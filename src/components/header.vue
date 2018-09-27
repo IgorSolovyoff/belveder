@@ -17,11 +17,21 @@
         </li>
       </ul>
     </div>
+    <PushRotate id="ham">
+        <a href="#/home">Главная</a>
+        <a href="#/about">О нас</a>
+        <a href="#/product">Продукция</a>
+        <a href="#/contacts">Контакты</a>
+    </PushRotate>
   </header>
 </template>
 <script>
+import { PushRotate } from 'vue-burger-menu'
 export default {
-  name: 'mainHeader'
+  name: 'mainHeader',
+  components: {
+    PushRotate
+  }
 }
 </script>
 
@@ -41,7 +51,14 @@ li {
 a {
  color: #42b983;
 }
-img {
- max-width: 100%;
+@media(max-width: 600px){
+#nav {
+ visibility: hidden;
+}
+}
+@media(min-width: 600px){
+  #ham{
+    visibility: hidden;
+  }
 }
 </style>
