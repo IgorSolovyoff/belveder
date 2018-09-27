@@ -49,16 +49,16 @@ li {
  margin: 0 10px;
 }
 a {
- color: #42b983;
+ color: black;
 }
 @media(max-width: 600px){
 #nav {
- visibility: hidden;
+ display: none;
 }
 }
 @media(min-width: 600px){
   #ham{
-    visibility: hidden;
+    display: none;
   }
 }
 </style>
