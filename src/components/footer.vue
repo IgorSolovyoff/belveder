@@ -12,21 +12,21 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 p {
-color: black;
+ color: black;
 }
 ul {
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-overflow: hidden;
-text-align: center;
+ list-style-type: none;
+ padding: 0px;
+ margin: 0px;
+ overflow: hidden;
+ text-align: center;
 }
 li {
-display: inline;
-margin: 0 10px;
+ display: inline;
+ margin: 0 10px;
 
 }
 a {
-color: #a07038;
+ color: #a07038;
 }
 </style>

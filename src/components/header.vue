@@ -28,20 +28,20 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 ul {
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-overflow: hidden;
-text-align: center;
+ list-style-type: none;
+ padding: 0px;
+ margin: 0px;
+ overflow: hidden;
+ text-align: center;
 }
 li {
-display: inline;
-margin: 0 10px;
+ display: inline;
+ margin: 0 10px;
 }
 a {
-color: #42b983;
+ color: #42b983;
 }
 img {
-max-width: 100%;
+ max-width: 100%;
 }
 </style>
