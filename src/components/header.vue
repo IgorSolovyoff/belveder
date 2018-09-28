@@ -8,7 +8,9 @@
         <li>
           <a href="#/about">О нас</a>
         </li>
+        <li>
           <img src="@/assets/Logo-Belveder.png">
+        </li>
         <li>
           <a href="#/product">Продукция</a>
         </li>
@@ -38,25 +40,26 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 ul {
+ display: flex;
  list-style-type: none;
- padding: 0px;
- margin: 0px;
+ padding: 0;
+ margin: auto;
  overflow: hidden;
- text-align: center;
+ justify-content: center;
 }
 li {
- display: inline;
- margin: 0 10px;
+ margin: auto 15px auto 15px;
 }
 a {
  color: black;
 }
-@media(max-width: 600px){
+
+@media(max-width: 650px){
 #nav {
  display: none;
 }
 }
-@media(min-width: 600px){
+@media(min-width: 650px){
   #ham{
     display: none;
   }
