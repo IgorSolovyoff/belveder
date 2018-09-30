@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
 <section class="home">
   <div class="hello">
@@ -25,5 +24,6 @@ width: 100%;
 }
 #title{
 padding-top: 30%;
+margin: 0;
 }
 </style>

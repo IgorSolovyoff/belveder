@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
 <section class="contacts">
 <p>

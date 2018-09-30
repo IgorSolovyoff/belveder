@@ -3,27 +3,27 @@
     <div id="nav">
       <ul>
         <li>
-          <a href="#/home">Главная</a>
+          <router-link to="/home">Главная</router-link>
         </li>
         <li>
-          <a href="#/about">О нас</a>
+          <router-link to="/about">О нас</router-link>
         </li>
         <li>
           <img src="@/assets/Logo-Belveder.png">
         </li>
         <li>
-          <a href="#/product">Продукция</a>
+          <router-link to="/product">Продукция</router-link>
         </li>
         <li>
-          <a href="#/contacts">Контакты</a>
+          <router-link to="/contacts">Контакты</router-link>
         </li>
       </ul>
     </div>
     <PushRotate id="ham">
-        <a href="#/home">Главная</a>
-        <a href="#/about">О нас</a>
-        <a href="#/product">Продукция</a>
-        <a href="#/contacts">Контакты</a>
+        <router-link to="/home">Главная</router-link>
+        <router-link to="/about">О нас</router-link>
+        <router-link to="/product">Продукция</router-link>
+        <router-link to="/contacts">Контакты</router-link>
     </PushRotate>
   </header>
 </template>
@@ -39,6 +39,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+header {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+  z-index: 100;
+  position: relative;
+}
 ul {
  display: flex;
  list-style-type: none;
@@ -52,6 +57,7 @@ li {
 }
 a {
  color: black;
+ text-decoration: none;
 }
 
 @media(max-width: 650px){
