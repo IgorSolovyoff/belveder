@@ -2,7 +2,7 @@
 	<div class="box">
 		<div class="item">
 			<img class="item__img" :src="loadImg(img)">
-				<h4 class="item__title">{{ product.name }}</h4>
+				<h4 class="item__title">{{ product.title }}</h4>
 		</div>
 	</div>
 </template>

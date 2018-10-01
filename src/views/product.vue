@@ -1,48 +1,37 @@
 <template>
-<section class="product">
-	<div class="wrap">
-		<Item v-for="product in filteredRows" :key="product.id" :img="imgUrl(product.img, product.id)" :product="product"/>
-	</div>
-</section>
+	<section class="prdct">
+		<div class="wrap">
+			<Item v-for="product in products" :key="product.id" :img="imgUrl(product.img, product.id)" :product="product"/>
+		</div>
+	</section>
 </template>
 <script>
 	import axios from "axios";
 	import Item from "@/components/item.vue";
 	export default {
-		name: "Product",
+		name: "Catalog",
 		components: {
 			Item
 		},
-		data: () => ({
-			products: [],
-			    rowsPerPage: 8,
-    // Отображаемая страница
-    selectedPage: 1
-			}),
-		  computed: {
-    // Количество строк в таблице
-    totalRows() {
-      return this.products.length;
-    },
-    // Отображаемые строки таблицы
-    filteredRows() {
-      return this.products.filter((item, index) => {
-        const startIndex = (this.selectedPage - 1) * this.rowsPerPage;
-        const finalIndex = startIndex + this.rowsPerPage;
-        return startIndex <= index && index < finalIndex;
-      });
-    }
-  },
-    	mounted() {
-    		axios
-    		.get('http://localhost:3000/products')
-    		.then(response => (this.products = response));
+		data() {
+			return{
+				products: [],
+			};
+			},
+			mounted() {
+				this.loadData();
+			},
+		methods: {
+			loadData() {
+				axios
+				.get('http://localhost:3000/products')
+				.then(response => (this.products = response.data));
     	},
     	imgUrl(img, id) {
-    		return "cards/" + id + "/main/" + img + ".jpg";
+    		return "cards/" + id + "/" + img + ".jpg";
+    	}
     }
-
-	}	
+}	
 </script>
 <style type="text/css" scoped>
 
