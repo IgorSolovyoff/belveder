@@ -1,7 +1,9 @@
 <template>
 	<section class="prdct">
 		<div class="wrap">
+			<ul class="row">
 			<Item v-for="product in products" :key="product.id" :img="imgUrl(product.img, product.id)" :product="product"/>
+		</ul>
 		</div>
 	</section>
 </template>
@@ -34,5 +36,17 @@
 }	
 </script>
 <style type="text/css" scoped>
+	.row{
+		 display: flex;
+		 list-style-type: none;
+		 padding: 0;
+		 margin: auto;
+		 overflow: hidden;
+		 justify-content: space-evenly;
+		 flex-wrap: wrap;
+	}
+	ul {
+		padding: 0;
+	}
 
 </style>

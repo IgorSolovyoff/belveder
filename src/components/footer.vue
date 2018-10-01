@@ -6,7 +6,7 @@
     <div class="info">
       <h2>ТВК "Интерио"</h2>
       <p>
-         Телефон: <a href="tel:+79657577117">+7 965 757 7117</a><br>Email: <a href="mailto:spb@stav-decor.ru">spb@stav-decor.ru</a>
+         Телефон: <a href="tel:+79657577117">+7 965 757 7117</a><br><br>Email: <a href="mailto:spb@stav-decor.ru">spb@stav-decor.ru</a>
       </p>
     </div>
     </footer>
@@ -21,6 +21,11 @@ export default {
 <style scoped>
 p {
  color: black;
+ text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #2c3e50;
 }
 footer{
   height: 300px;

@@ -12,7 +12,7 @@
           <img src="@/assets/Logo-Belveder.png">
         </li>
         <li>
-          <router-link to="/product">Продукция</router-link>
+          <router-link to="/catalog">Продукция</router-link>
         </li>
         <li>
           <router-link to="/contacts">Контакты</router-link>
@@ -22,7 +22,7 @@
     <PushRotate id="ham">
         <router-link to="/home">Главная</router-link>
         <router-link to="/about">О нас</router-link>
-        <router-link to="/product">Продукция</router-link>
+        <router-link to="/catalog">Продукция</router-link>
         <router-link to="/contacts">Контакты</router-link>
     </PushRotate>
   </header>

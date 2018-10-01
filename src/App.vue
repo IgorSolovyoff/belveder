@@ -22,7 +22,7 @@ export default {
 }
 </script>
 <style scoped>
-    body {
+body {
       margin: 0;
     }
 #app {
