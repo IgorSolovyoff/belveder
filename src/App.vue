@@ -22,6 +22,9 @@ export default {
 }
 </script>
 <style scoped>
+body {
+      margin: 0;
+    }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,9 +32,9 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-@media(min-width: 600px){
+@media(min-width: 650px){
   #ham{
-    visibility: hidden;
+    display: none;
   }
 }
 </style>

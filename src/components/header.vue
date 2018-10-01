@@ -3,25 +3,27 @@
     <div id="nav">
       <ul>
         <li>
-          <a href="#/home">Главная</a>
+          <router-link to="/home">Главная</router-link>
         </li>
         <li>
-          <a href="#/about">О нас</a>
+          <router-link to="/about">О нас</router-link>
         </li>
+        <li>
           <img src="@/assets/Logo-Belveder.png">
-        <li>
-          <a href="#/product">Продукция</a>
         </li>
         <li>
-          <a href="#/contacts">Контакты</a>
+          <router-link to="/catalog">Продукция</router-link>
+        </li>
+        <li>
+          <router-link to="/contacts">Контакты</router-link>
         </li>
       </ul>
     </div>
     <PushRotate id="ham">
-        <a href="#/home">Главная</a>
-        <a href="#/about">О нас</a>
-        <a href="#/product">Продукция</a>
-        <a href="#/contacts">Контакты</a>
+        <router-link to="/home">Главная</router-link>
+        <router-link to="/about">О нас</router-link>
+        <router-link to="/catalog">Продукция</router-link>
+        <router-link to="/contacts">Контакты</router-link>
     </PushRotate>
   </header>
 </template>
@@ -37,26 +39,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+header {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+  z-index: 100;
+  position: relative;
+}
 ul {
+ display: flex;
  list-style-type: none;
- padding: 0px;
- margin: 0px;
+ padding: 0;
+ margin: auto;
  overflow: hidden;
- text-align: center;
+ justify-content: center;
 }
 li {
- display: inline;
- margin: 0 10px;
+ margin: auto 15px auto 15px;
 }
 a {
  color: black;
+ text-decoration: none;
 }
-@media(max-width: 600px){
+
+@media(max-width: 650px){
 #nav {
  display: none;
 }
 }
-@media(min-width: 600px){
+@media(min-width: 650px){
   #ham{
     display: none;
   }
