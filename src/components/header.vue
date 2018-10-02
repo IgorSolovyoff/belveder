@@ -3,7 +3,7 @@
     <div id="nav">
       <ul>
         <li>
-          <router-link to="/home">Главная</router-link>
+          <router-link to="/">Главная</router-link>
         </li>
         <li>
           <router-link to="/about">О нас</router-link>
@@ -20,7 +20,7 @@
       </ul>
     </div>
     <PushRotate id="ham">
-        <router-link to="/home">Главная</router-link>
+        <router-link to="/">Главная</router-link>
         <router-link to="/about">О нас</router-link>
         <router-link to="/catalog">Продукция</router-link>
         <router-link to="/contacts">Контакты</router-link>

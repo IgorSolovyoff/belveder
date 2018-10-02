@@ -18,7 +18,8 @@ export default {
   components: {
     mainHeader,
     mainFooter
-  }
+  },
+
 }
 </script>
 <style scoped>
