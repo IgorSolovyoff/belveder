@@ -2,9 +2,9 @@
 <template>
   <div id="app">
     <mainHeader/>
-    <main id="page-wrap">
-    <h1 id="ham">Бельведер</h1>
-    <router-view/>
+      <main id="page-wrap">
+        <h1 id="ham">Бельведер</h1>
+      <router-view/>
     <mainFooter/>
     </main>
   </div>

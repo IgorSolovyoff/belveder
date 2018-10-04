@@ -1,8 +1,16 @@
 <template>
 <section class="home">
   <div class="hello">
-    <h1 id="title">Декоративные краски и штукатурки "Бельведер"</h1>
+    <div class="header_text">
+      <h1 id="title">Декоративные краски и штукатурки</h1>
+      <h2>Продажа и нанесение в Санкт-Петербурге.</h2>
+    </div>
+    <img src="@/assets/img/home/test3.jpg" id="header_img">
   </div>
+
+  <section class="calc">
+    <calculate />
+  </section>
 
   <div class="action">
   	<div class="material">
@@ -12,7 +20,7 @@
   		<div class="material_text">
   			<p>Выберете свой материал</p>
   			<router-link to="/catalog" tag="button">Перейти в каталог</router-link>
-  		</div>		
+  		</div>
   	</div>
   	<div class="price">
   		<div class="price_text">
@@ -47,7 +55,7 @@
   			<img src="@/assets/img/home/test.jpg" id="why_img">
   			<p>Ответственность и добросовестность</p>
   		</li>
-  	</ul>  	
+  	</ul>
   </section>
 </section>
 </template>
@@ -55,14 +63,20 @@
 
 <script>
 import modal from "@/components/modal.vue"
+import Calculate from '../components/calculate'
+import axios from "axios"
 export default {
   name: 'Home',
   components: {
+    Calculate,
   	modal
   },
   data: function(){
-    return { showModal : false }
-  }
+    return {
+      showModal : false
+    }
+  },
+
 }
 </script>
 
@@ -72,18 +86,28 @@ p{
 color: #a07038;
 }
 .hello{
-background-image: url(../assets/head.jpg);
-height: 705px;
-color: white;
-background-size: cover;
-width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  height: 750px;
+}
+.header_text{
+  flex-basis: 50%;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+#header_img {
+  height: 250px;
+  width: 300px;
+  margin: auto;
 }
 #title{
-padding-top: 30%;
-margin: 0;
+  font-size: 60px;
 }
-.action {
-
+.calc {
+  height: 750px;
+  background-color: deepskyblue;
 }
 .material {
 	display: flex;
@@ -127,11 +151,11 @@ button {
 	margin-top: 0;
 }
 .why_list {
- display: flex;
- list-style-type: none;
- padding: 0;
- overflow: hidden;
- justify-content: space-between;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-between;
 }
 .why_list li {
 	margin: auto;
