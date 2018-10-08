@@ -14,11 +14,7 @@
 
   <div class="action">
   	<div class="material">
-  		<div class="material_img">
-  			<img src="@/assets/img/home/test.jpg" id="action_img">
-  		</div>
-  		<div class="material_text">
-  			<p>Выберете свой материал</p>
+  			<h1>ВЫБЕРИ СВОЙ МАТЕРИАЛ</h1>
   			<router-link to="/catalog" tag="button">Перейти в каталог</router-link>
   		</div>
   	</div>
@@ -110,7 +106,18 @@ color: #a07038;
   background-color: deepskyblue;
 }
 .material {
-	display: flex;
+	background: url("../assets/svg/bg.svg") center no-repeat;
+  height: 700px;
+  background-size: cover;
+}
+.material h1 {
+  margin: auto;
+  padding-top: 20%;
+  color: white;
+  font-size: 2em;
+}
+.material button {
+  margin-top: 50px;
 }
 .price {
 	display: flex;
@@ -119,15 +126,9 @@ color: #a07038;
 	width: 100%;
 	height: 100%;
 }
-.material_img {
-	flex-basis: 50%;
-}
+
 .price_img {
-	flex-basis: 50%;
-}
-.material_text {
-	flex-basis: 50%;
-	margin: auto;
+  flex-basis: 50%;
 }
 .price_text {
 	flex-basis: 50%;
