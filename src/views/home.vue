@@ -5,7 +5,7 @@
       <h1 id="title">Декоративные краски и штукатурки</h1>
       <h2>Продажа и нанесение в Санкт-Петербурге.</h2>
     </div>
-    <img src="@/assets/img/home/test3.jpg" id="header_img">
+    <img src="../assets/img/home/test3.jpg" id="header_img">
   </div>
 
   <section class="calc">
@@ -27,7 +27,7 @@
     </modal>
   		</div>
   		<div class="price_img">
-  			<img src="@/assets/img/home/test.jpg" id="action_img">
+  			<img src="../assets/img/home/test.jpg" id="action_img">
   		</div>
   	</div>
   </div>
@@ -36,19 +36,19 @@
   	<h1>Почему Бельведер?</h1>
   	<ul class="why_list">
   		<li>
-  			<img src="@/assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/img/home/test.jpg" id="why_img">
   			<p>Продаём своё</p>
   		</li>
   		<li>
-  			<img src="@/assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/img/home/test.jpg" id="why_img">
   			<p>Любим и знаем своё дело</p>
   		</li>
   		<li>
-  			<img src="@/assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/img/home/test.jpg" id="why_img">
   			<p>Успешно работаем с 2003 года</p>
   		</li>
   		<li>
-  			<img src="@/assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/img/home/test.jpg" id="why_img">
   			<p>Ответственность и добросовестность</p>
   		</li>
   	</ul>
@@ -60,7 +60,6 @@
 <script>
 import modal from "@/components/modal.vue"
 import Calculate from '../components/calculate'
-import axios from "axios"
 export default {
   name: 'Home',
   components: {
@@ -79,7 +78,7 @@ export default {
 
 <style scoped>
 p{
-color: #a07038;
+color: black;
 }
 .hello{
   background-color: white;
@@ -118,6 +117,8 @@ color: #a07038;
 }
 .material button {
   margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 .price {
 	display: flex;
@@ -148,7 +149,8 @@ button {
 	background-color: #efefef;
 }
 .why h1 {
-	padding-top: 15px;
+	padding-top: 50px;
+  padding-bottom: 50px;
 	margin-top: 0;
 }
 .why_list {
