@@ -1,14 +1,14 @@
 <template>
   <section id="calculate">
     <h1>Рассчитайте стоимость материала</h1>
-    <span>Выберете материал:</span>
+    <p>Выберите материал:</p>
     <select v-model="Selected">
       <option v-for="product in products" :title="product.title" :value="product.cost">{{product.title}}</option>
     </select>
     <br>
     <br>
-    <span>Введите площадь:</span>
-    <input v-model.number="meter" placeholder="кв.м" type="number" required min="1">
+    <p>Введите площадь:</p>
+    <input v-model.number="meter" placeholder="кв.м" type="number" required min="0" step="10">
     <p>Цена за квадратный метр: {{Selected}}</p>
     <p>Примерная цена материалов: {{Selected * meter}} руб</p>
   </section>
@@ -47,15 +47,29 @@
     padding-top: 10%;
     font-size: 35px;
     color: white;
+    text-transform: uppercase;
   }
   section {
     height: 500px;
   }
   select {
-    margin-top: 10%;
+    width: 250px;
+    padding: 15px;
+    text-transform: uppercase;
+    border: white 1px solid;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+  }
+  input {
+    padding: 15px;
+    width: 216px;
   }
   p, span {
     color: white;
     font-size: 1.5em;
+  }
+  option {
+    height: 50px;
   }
 </style>

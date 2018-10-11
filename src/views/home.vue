@@ -14,41 +14,42 @@
 
   <div class="action">
   	<div class="material">
-  			<h1>ВЫБЕРИ СВОЙ МАТЕРИАЛ</h1>
-  			<router-link to="/catalog" tag="button">Перейти в каталог</router-link>
-  		</div>
-  	</div>
-  	<div class="price">
-  		<div class="price_text">
-  			<p>Рассчитаем стоимость</p>
-  			<button id="show-modal" @click="showModal = true">Рассчитать</button>
-    <modal v-if="showModal" @close="showModal = false">
-    	<h3 slot="header">custom header</h3>
-    </modal>
-  		</div>
-  		<div class="price_img">
-  			<img src="../assets/img/home/test.jpg" id="action_img">
-  		</div>
-  	</div>
+      <h1>ВЫБЕРИ СВОЙ МАТЕРИАЛ</h1>
+      <router-link to="/catalog" tag="button">Перейти в каталог</router-link>
+    </div>
   </div>
+  	<div class="price">
+      <div class="container" id="price_text">
+      <h1>Рассчитаем стоимость</h1>
+      <h2>Свяжитесь с нами, чтобы узнать точную цену за кв.м. и получить скидку от 10% на первый заказ!</h2>
+        <p id="button_p">
+      <button id="show-modal" @click="showModal = true">Отправить заявку</button>
+          <modal v-if="showModal" @close="showModal = false"></modal>
+        </p>
+      </div>
+      <div class="container" id="price_img">
+      <img src="../assets/SVG/SVG/calc.svg" id="calc_svg">
+      </div>
+    </div>
+
 
   <section class="why">
   	<h1>Почему Бельведер?</h1>
   	<ul class="why_list">
   		<li>
-  			<img src="../assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/SVG/SVG/1_item.svg" id="why_img">
   			<p>Продаём своё</p>
   		</li>
   		<li>
-  			<img src="../assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/SVG/SVG/2_item.svg" id="why_img">
   			<p>Любим и знаем своё дело</p>
   		</li>
   		<li>
-  			<img src="../assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/SVG/SVG/3_item.svg" id="why_img">
   			<p>Успешно работаем с 2003 года</p>
   		</li>
   		<li>
-  			<img src="../assets/img/home/test.jpg" id="why_img">
+  			<img src="../assets/SVG/SVG/4_item.svg" id="why_img">
   			<p>Ответственность и добросовестность</p>
   		</li>
   	</ul>
@@ -121,20 +122,40 @@ color: black;
   color: white;
 }
 .price {
-	display: flex;
-}
-#action_img {
-	width: 100%;
-	height: 100%;
+  background: url("../assets/SVG/SVG/bg_grad.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+  display: flex;
 }
 
-.price_img {
-  flex-basis: 50%;
+.price h1 {
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 3em;
 }
-.price_text {
-	flex-basis: 50%;
-	margin: auto;
+.price h2 {
+  text-align: left;
+  padding-top: 0;
+  padding-left: 50px;
 }
+#price_text {
+  margin: auto;
+  flex-basis: 60%;
+  color: white;
+}
+#price_img {
+  flex-basis: 40%;
+  margin: auto;
+}
+#calc_svg {
+  width: 90%;
+  height: 90%;
+}
+
 button {
 	background-color: #008CBA;
 	border: none;
@@ -143,6 +164,12 @@ button {
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
+  text-transform: uppercase;
+}
+#button_p {
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 10px;
 }
 .why {
 	height: 350px;

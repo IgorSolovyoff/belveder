@@ -6,21 +6,26 @@
 
           <div class="modal-header">
             <slot name="header">
-              default header
+              Обратная связь
             </slot>
+            <button class="close" @click="$emit('close')"><span>X</span></button>
           </div>
 
           <div class="modal-body">
             <slot name="body">
-              default body
+              <form action="#">
+                <input v-model="name" placeholder="Ваше имя" type="text">
+                <input v-model="phone" placeholder="Телефон" type="tel">
+                <input v-model="mail" placeholder="E-mail" type="email">
+                <input v-model="comment" placeholder="Комментарий" type="text" id="comment">
+              </form>
             </slot>
           </div>
 
           <div class="modal-footer">
             <slot name="footer">
-              default footer
               <button class="modal-default-button" @click="$emit('close')">
-                OK
+                <span>Oтправить</span>
               </button>
             </slot>
           </div>
@@ -56,7 +61,7 @@
 .modal-container {
   width: 300px;
   margin: 0px auto;
-  padding: 20px 30px;
+  padding: 45px 30px;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
@@ -68,13 +73,23 @@
   margin-top: 0;
   color: #42b983;
 }
-
+  .close {
+    float: right;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+  }
 .modal-body {
   margin: 20px 0;
 }
 
 .modal-default-button {
   float: right;
+  background-color: #008CBA;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 /*
@@ -99,4 +114,13 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+  input {
+    margin: 5px;
+    padding: 5px;
+    width: 93.5%;
+  }
+  #comment {
+    height: 45px;
+  }
+
 </style>
