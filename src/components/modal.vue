@@ -13,7 +13,7 @@
 
           <div class="modal-body">
             <slot name="body">
-              <form action="#">
+              <form>
                 <input v-model="name" placeholder="Ваше имя" type="text">
                 <input v-model="phone" placeholder="Телефон" type="tel">
                 <input v-model="mail" placeholder="E-mail" type="email">

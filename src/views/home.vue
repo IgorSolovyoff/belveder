@@ -1,24 +1,24 @@
 <template>
 <section class="home">
-  <div class="hello">
+  <section class="hello">
     <div class="header_text">
       <h1 id="title">Декоративные краски и штукатурки</h1>
-      <h2>Продажа и нанесение в Санкт-Петербурге.</h2>
+      <h2>Продажа и нанесение&nbsp;в Санкт-Петербурге</h2>
     </div>
     <img src="../assets/img/home/test3.jpg" id="header_img">
-  </div>
+  </section>
 
   <section class="calc">
     <calculate />
   </section>
 
-  <div class="action">
+  <section class="action">
   	<div class="material">
       <h1>ВЫБЕРИ СВОЙ МАТЕРИАЛ</h1>
       <router-link to="/catalog" tag="button">Перейти в каталог</router-link>
     </div>
-  </div>
-  	<div class="price">
+  </section>
+  	<section class="price">
       <div class="container" id="price_text">
       <h1>Рассчитаем стоимость</h1>
       <h2>Свяжитесь с нами, чтобы узнать точную цену за кв.м. и получить скидку от 10% на первый заказ!</h2>
@@ -30,10 +30,10 @@
       <div class="container" id="price_img">
       <img src="../assets/SVG/SVG/calc.svg" id="calc_svg">
       </div>
-    </div>
+    </section>
 
 
-  <section class="why">
+  <!--section class="why">
   	<h1>Почему Бельведер?</h1>
   	<ul class="why_list">
   		<li>
@@ -53,7 +53,7 @@
   			<p>Ответственность и добросовестность</p>
   		</li>
   	</ul>
-  </section>
+  </section !-->
 </section>
 </template>
 
@@ -78,35 +78,51 @@ export default {
 
 
 <style scoped>
+  .home {
+    background-color: lightgray;
+  }
+  section {
+    width: 100%;
+  }
 p{
 color: black;
 }
 .hello{
+  height: 700px;
   background-color: white;
   color: black;
   display: flex;
-  height: 750px;
+  justify-content: space-evenly;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .header_text{
-  flex-basis: 50%;
+  flex-grow: 0;
   text-align: left;
   margin-left: 5%;
-  margin-top: 10%;
+  align-self: center;
 }
 #header_img {
-  height: 250px;
-  width: 300px;
-  margin: auto;
+  flex-grow: 1;
+  align-self: center;
+  height: 300px;
+  width: 400px;
 }
 #title{
-  font-size: 60px;
+  font-size: 45px;
 }
 .calc {
   height: 750px;
-  background-color: deepskyblue;
+  background-color: white;
+  color: black;
+  margin-top: 25px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.action {
+  margin-top: 25px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .material {
-	background: url("../assets/svg/bg.svg") center no-repeat;
+	background: url("../assets/svg/bg.svg") no-repeat;
   height: 700px;
   background-size: cover;
 }
@@ -115,6 +131,7 @@ color: black;
   padding-top: 20%;
   color: white;
   font-size: 2em;
+  text-align: center;
 }
 .material button {
   margin-top: 50px;
@@ -127,20 +144,22 @@ color: black;
   width: 100%;
   height: 750px;
   display: flex;
+  margin-top: 25px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .price h1 {
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 50px;
-  padding-left: 50px;
+  padding-top: 10%;
+  padding-left: 5%;
   font-size: 3em;
 }
 .price h2 {
   text-align: left;
   padding-top: 0;
-  padding-left: 50px;
+  padding-left: 5%;
 }
 #price_text {
   margin: auto;
@@ -168,7 +187,7 @@ button {
 }
 #button_p {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 5%;
   padding-top: 10px;
 }
 .why {
@@ -196,4 +215,9 @@ button {
 	border-radius: 100px;
 }
 
+@media (max-width: 750px) {
+  #header_img, #calc_svg{
+    display: none;
+  }
+}
 </style>

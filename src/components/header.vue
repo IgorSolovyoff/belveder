@@ -1,25 +1,31 @@
 <template>
   <header class="header">
-      <ul>
-        <li>
+    <nav>
+      <ul class="navigation">
+        <li class="logo"><router-link to="/" >Belveder</router-link></li>
+        <li class="link">
           <router-link to="/">Главная</router-link>
         </li>
-        <li>
+        <li class="link">
           <router-link to="/about">О нас</router-link>
         </li>
-        <li>
+        <li class="link">
           <router-link to="/catalog">Продукция</router-link>
         </li>
-        <li>
+        <li class="link">
           <router-link to="/contacts">Контакты</router-link>
         </li>
       </ul>
-    <PushRotate id="ham">
+    </nav>
+    <div class="wrap" id="ham">
+    <PushRotate>
         <router-link to="/">Главная</router-link>
         <router-link to="/about">О нас</router-link>
         <router-link to="/catalog">Продукция</router-link>
         <router-link to="/contacts">Контакты</router-link>
     </PushRotate>
+    </div>
+
   </header>
 </template>
 <script>
@@ -38,6 +44,7 @@ header {
   z-index: 100;
   position: relative;
 
+
 }
 ul {
   display: flex;
@@ -45,12 +52,21 @@ ul {
   padding: 0;
   margin: auto;
   overflow: hidden;
-  justify-content: flex-end;
   height: 100px;
+
+}
+
+.logo{
+  flex-grow: 1;
+  text-align: start;
+  margin-left: 5%;
 }
 
 li {
  margin: auto 20px auto 20px;
+}
+.link {
+  flex-grow: 0;
 }
 a {
  color: black;
@@ -58,7 +74,7 @@ a {
 }
 
 @media(max-width: 650px){
-#nav {
+nav {
  display: none;
 }
 }

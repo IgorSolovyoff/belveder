@@ -31,6 +31,8 @@ footer{
   height: 300px;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 25px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .info{

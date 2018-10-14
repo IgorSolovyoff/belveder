@@ -24,7 +24,7 @@ export default {
 </script>
 <style scoped>
 body {
-      margin: 0;
+  margin: 0;
     }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -32,6 +32,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+#ham {
+  display: none;
 }
 @media(min-width: 650px){
   #ham{

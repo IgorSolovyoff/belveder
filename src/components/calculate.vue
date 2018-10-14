@@ -46,17 +46,19 @@
   h1 {
     padding-top: 10%;
     font-size: 35px;
-    color: white;
+    color: black;
     text-transform: uppercase;
+    margin: 0;
   }
   section {
-    height: 500px;
+    height: 100%;
+
   }
   select {
     width: 250px;
     padding: 15px;
     text-transform: uppercase;
-    border: white 1px solid;
+    border: black 1px solid;
     overflow: hidden;
     cursor: pointer;
     text-align: center;
@@ -66,7 +68,7 @@
     width: 216px;
   }
   p, span {
-    color: white;
+    color: black;
     font-size: 1.5em;
   }
   option {
