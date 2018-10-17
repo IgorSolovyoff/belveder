@@ -28,7 +28,7 @@
         </p>
       </div>
       <div class="container" id="price_img">
-      <img src="../assets/SVG/SVG/calc.svg" id="calc_svg">
+      <!--img src="../assets/SVG/SVG/calc.svg" id="calc_svg"!-->
       </div>
     </section>
 
@@ -114,11 +114,11 @@ color: black;
   height: 750px;
   background-color: white;
   color: black;
-  margin-top: 25px;
+  margin-top: 15px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .action {
-  margin-top: 25px;
+  margin-top: 15px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .material {
@@ -139,12 +139,11 @@ color: black;
   color: white;
 }
 .price {
-  background: url("../assets/SVG/SVG/bg_grad.svg") no-repeat;
   background-size: cover;
   width: 100%;
   height: 750px;
   display: flex;
-  margin-top: 25px;
+  margin-top: 15px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
