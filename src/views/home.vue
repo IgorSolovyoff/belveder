@@ -79,7 +79,7 @@ export default {
 
 <style scoped>
   .home {
-    background-color: lightgray;
+    background-color: #e2e1e0;
   }
   section {
     width: 100%;
