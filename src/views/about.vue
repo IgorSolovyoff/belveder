@@ -66,6 +66,11 @@
   </section>
 </section>
 </template>
+<script>
+  export default {
+    name: 'About'
+  }
+</script>
 <style type="text/css" scoped>
   .about {
     background-color: #e2e1e0;
@@ -76,6 +81,7 @@
   }
   .header-img {
     background: url("../assets/img/about/head.jpg") no-repeat;
+    background-size: cover;
     width: 100%;
     height: 705px;
     text-align: left;
@@ -83,7 +89,7 @@
   }
   .header-img h1 {
     margin-top: auto;
-    padding-top: 15%;
+    padding-top: 20%;
     font-size: 3em;
     margin-left: 5%;
     text-transform: uppercase;
@@ -102,10 +108,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 5%;
+    padding-left: 0;
 
   }
   .card-item {
-    height: 350px;
+    height: 100%;
     width: 450px;
     margin-bottom: 5%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

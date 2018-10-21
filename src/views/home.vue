@@ -28,7 +28,7 @@
         </p>
       </div>
       <div class="container" id="price_img">
-      <!--img src="../assets/SVG/SVG/calc.svg" id="calc_svg"!-->
+      <img src="../assets/SVG/SVG/calc.svg" id="calc_svg">
       </div>
     </section>
 
@@ -139,6 +139,7 @@ color: black;
   color: white;
 }
 .price {
+  background: url("../assets/SVG/SVG/bg_grad.svg");
   background-size: cover;
   width: 100%;
   height: 750px;

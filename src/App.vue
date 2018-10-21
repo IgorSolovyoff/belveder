@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
   <div id="app">
     <mainHeader/>
@@ -41,4 +40,5 @@ body {
     display: none;
   }
 }
+
 </style>
